@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cate Defa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Oswald&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/
+fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Projects</h1>
+</section>
+
+<!----- Project Content------->
+
+<section class="projects">
+    <div class="row">
+        <div class="projects-col">
+            <a href="https://cdefa23.github.io/PickUpPC/">
+                <img src="images/pickup.png">
+                <h3>Pick Up PC</h3>
+                <p>I, along with two peers, created a website for Recycle Utah's program called Pick Up PC. This was developed in a semester long class through the PCCAPS program.</p>
+            </a>
+        </div>
+        <div class="projects-col">
+            <img src="images/aura2.png">
+            <h3>Stay Tuned!</h3>
+            <p></p>
+        </div>
+        <div class="projects-col">
+            <img src="images/aura2.png">
+            <h3>Stay Tuned!</h3>
+            <p></p>
+        </div>
+    </div>
+
+</section>
+
+<!----- Footer ------->
+
+<section class="footer">
+    <div class="icons">
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by Cate Defa</p>
+</section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
